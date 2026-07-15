@@ -3,7 +3,7 @@ from .views import MamlakatViewSet
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register(r'mamlakat', MamlakatViewSet)
+router.register('mamlakat', MamlakatViewSet)
 
 urlpatterns = [
     path('', include(router.urls)), 
